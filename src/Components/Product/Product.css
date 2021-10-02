@@ -1,0 +1,41 @@
+.products{
+    display: flex;
+    margin-left: 100px;
+    border-bottom: 1px solid rgb(68, 41, 41);
+    margin-right: 5px;
+    padding-bottom: 10px;
+}
+.products img{
+    width: 200px;
+    margin-right: 20px;
+}
+.add-button{
+    background-color: rgb(18, 18, 185);
+    width: 130px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.add-button:hover{
+    background-color: yellow;
+    transition: 1s;
+    color: navy;
+    font-weight: 700;
+}
+
+.rating-icons{
+    color: orange;
+    
+}
+
+.product-info{
+    display: flex;
+}
+
+.product-info li{
+    font-size: 10px;
+}
+.rating{
+    margin-left: 40px;
+}

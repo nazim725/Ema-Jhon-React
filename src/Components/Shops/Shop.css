@@ -1,0 +1,31 @@
+.search-field{
+    background-color: rgba(24, 21, 21, 0.876);
+    line-height: 45px;
+    text-align: center;
+}
+.search-field input{
+    width: 75%;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.shop-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.product-container{
+    border-right: 2px solid gray;
+    margin-right: 5px;
+}
+
+.sp-icon{
+    color: beige;
+}
+.sp-number{
+    color: beige;
+}
+
+.cart-container .order{
+    
+    text-align: center;
+}
