@@ -7,12 +7,17 @@ import Inventory from './Components/Inventory/Inventory';
 import OrderRivew from './Components/OrderRivew/OrderRivew';
 import NotFound from './Components/NotFound';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
+import AuthProvider from './Context/authProvider';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Shipping from './Components/Shipping/Shipping';
 
 function App() {
   return (
     <div>
-    
 
+      <AuthProvider>
       <Router>
       <Header></Header>
       <Switch>
@@ -25,17 +30,33 @@ function App() {
           <Route path="/rivew">
            <OrderRivew></OrderRivew>
           </Route>
-          <Route path="/inventory">
+          <PrivateRoute path="/inventory">
           <Inventory></Inventory>
-          </Route>
-          <Route path='/placeOrder'>
+          </PrivateRoute>
+          <PrivateRoute path="/shipping">
+          <Shipping></Shipping>
+          </PrivateRoute>
+          <PrivateRoute path='/placeOrder'>
             <PlaceOrder></PlaceOrder>
+          </PrivateRoute>
+
+          <Route path='/login'>
+            <Login></Login>
           </Route>
+          <Route path="/register">
+            <Register></Register>
+          </Route>
+
+
           <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>
+      </AuthProvider>
+    
+
+     
   
     </div>
   );

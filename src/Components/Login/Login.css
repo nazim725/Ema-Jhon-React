@@ -1,0 +1,33 @@
+.login{
+    display: flex;
+    justify-content: center;
+}
+
+.login-button{
+    background-color: dimgray;
+    border: 0;
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+    width: 175px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.login-button:hover{
+    background-color: goldenrod;
+    color: darkblue;
+}
+
+.login form input{
+    margin-top: 5px;
+    padding: 4px;
+    border-radius: 10px;
+
+}
+
+.link{
+    text-decoration: none;
+    margin-top: 0;
+}
+

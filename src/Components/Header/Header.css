@@ -19,9 +19,22 @@ nav .link{
     margin-right: 20px;
     color: blanchedalmond;
     text-decoration: none;
+    padding: 5px;
 }
 
 nav .link:hover{
+    background-color: beige;
+    color: blue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav button{
+   background-color: black;
+   border: 0;
+   color:blanchedalmond;
+}
+nav button:hover{
     background-color: beige;
     color: blue;
     padding: 5px;
