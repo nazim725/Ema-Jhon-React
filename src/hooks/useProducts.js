@@ -1,15 +1,15 @@
 
 import { useState, useEffect } from 'react';
-const useProducts=()=>{
+const useProducts = () => {
 
-    const [products,setProducts]=useState([]);
-    useEffect(()=>{
-        fetch('./products.JSON')
-        .then(res=>res.json())
-        .then(data=>setProducts(data))
-    },[])
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/products')
+            .then(res => res.json())
+            .then(data => setProducts(data.products))
+    }, [])
 
-    return [products,setProducts]
+    return [products, setProducts]
 
 }
 
